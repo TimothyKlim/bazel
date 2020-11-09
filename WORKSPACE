@@ -151,7 +151,7 @@ distdir_tar(
         "java_tools_javac11_darwin-v10.3.zip",
         "coverage_output_generator-v2.5.zip",
         # bazelbuid/stardoc
-        "1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz",
+        "247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
         # rules_sass
         "1.25.0.zip",
         # rules_nodejs
@@ -196,7 +196,7 @@ distdir_tar(
         "java_tools_javac11_darwin-v10.3.zip": "cd8f319b46876e7c3a814095ad9d91dd8589821480548ad48da11949f45a38e6",
         "coverage_output_generator-v2.5.zip": "cd14f1cb4559e4723e63b7e7b06d09fcc3bd7ba58d03f354cdff1439bd936a7d",
         # bazelbuild/stardoc
-        "1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz": "5a725b777976b77aa122b707d1b6f0f39b6020f66cd427bb111a585599c857b1",
+        "247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz": "aa0c0785d971841c26bc5ef842ef965fe9859f55de69044c7628c19fe185358f",
         # rules_sass
         "1.25.0.zip": "c78be58f5e0a29a04686b628cf54faaee0094322ae0ac99da5a8a8afca59a647",
         # rules_nodejs
@@ -250,9 +250,9 @@ distdir_tar(
         "coverage_output_generator-v2.5.zip": [
             "https://mirror.bazel.build/bazel_coverage_output_generator/releases/coverage_output_generator-v2.5.zip",
         ],
-        "1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz": [
-            "https://mirror.bazel.build/github.com/bazelbuild/stardoc/archive/1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz",
-            "https://github.com/bazelbuild/stardoc/archive/1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz",
+        "247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz": [
+            "https://mirror.bazel.build/github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
+            "https://github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
         ],
         "1.25.0.zip": [
             "https://mirror.bazel.build/github.com/bazelbuild/rules_sass/archive/1.25.0.zip",
@@ -531,11 +531,11 @@ http_archive(
 #   If it does, can we rename the workspace in bazelbuild/stardoc?
 http_archive(
     name = "io_bazel_skydoc",
-    sha256 = "5a725b777976b77aa122b707d1b6f0f39b6020f66cd427bb111a585599c857b1",
-    strip_prefix = "stardoc-1ef781ced3b1443dca3ed05dec1989eca1a4e1cd",
+    sha256 = "aa0c0785d971841c26bc5ef842ef965fe9859f55de69044c7628c19fe185358f",
+    strip_prefix = "stardoc-247c2097e7346778ac8d03de5a4770d6b9890dc5",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/stardoc/archive/1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz",
-        "https://github.com/bazelbuild/stardoc/archive/1ef781ced3b1443dca3ed05dec1989eca1a4e1cd.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
+        "https://github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
     ],
 )
 
