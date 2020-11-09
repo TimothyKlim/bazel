@@ -165,6 +165,10 @@ distdir_tar(
         "7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip",
         # bazelbuild/rules_cc
         "8bd6cd75d03c01bb82561a96d9c1f9f7157b13d0.zip",
+        # bazelbuild/rules_go
+        "rules_go-v0.24.5.tar.gz",
+        # bazelbuild/bazel-gazelle
+        "bazel-gazelle-v0.22.2.tar.gz",
         # bazelbuild/bazel-toolchains
         "bazel-toolchains-3.1.0.tar.gz",
         # bazelbuild/rules_pkg
@@ -206,6 +210,10 @@ distdir_tar(
         "7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip": "bc81f1ba47ef5cc68ad32225c3d0e70b8c6f6077663835438da8d5733f917598",
         # bazelbuild/rules_cc
         "8bd6cd75d03c01bb82561a96d9c1f9f7157b13d0.zip": "1d4dbbd1e1e9b57d40bb0ade51c9e882da7658d5bfbf22bbd15b68e7879d761f",
+        # bazelbuild/rules_go
+        "rules_go-v0.24.5.tar.gz": "d1ffd055969c8f8d431e2d439813e42326961d0942bdf734d2c95dc30c369566",
+        # bazelbuild/bazel-gazelle
+        "bazel-gazelle-v0.22.2.tar.gz": "b85f48fa105c4403326e9525ad2b2cc437babaa6e15a3fc0b1dbab0ab064bc7c",
         # bazelbuild/bazel-toolchains
         "bazel-toolchains-3.1.0.tar.gz": "726b5423e1c7a3866a3a6d68e7123b4a955e9fcbe912a51e0f737e6dab1d0af2",
         # bazelbuild/rules_pkg
@@ -276,6 +284,16 @@ distdir_tar(
         "8bd6cd75d03c01bb82561a96d9c1f9f7157b13d0.zip": [
             "https://mirror.bazel.build/github.com/bazelbuild/rules_cc/archive/8bd6cd75d03c01bb82561a96d9c1f9f7157b13d0.zip",
             "https://github.com/bazelbuild/rules_cc/archive/8bd6cd75d03c01bb82561a96d9c1f9f7157b13d0.zip",
+        ],
+        # bazelbuild/rules_go
+        "rules_go-v0.24.5.tar.gz": [
+            "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.24.5/rules_go-v0.24.5.tar.gz",
+            "https://github.com/bazelbuild/rules_go/releases/download/v0.24.5/rules_go-v0.24.5.tar.gz",
+        ],
+        # bazelbuild/bazel-gazelle
+        "bazel-gazelle-v0.22.2.tar.gz": [
+            "https://mirror.bazel.build/github.com/bazelbuild/bazel-gazelle/releases/download/v0.22.2/bazel-gazelle-v0.22.2.tar.gz",
+            "https://github.com/bazelbuild/bazel-gazelle/releases/download/v0.22.2/bazel-gazelle-v0.22.2.tar.gz",
         ],
         # bazelbuild/bazel-toolchains
         "bazel-toolchains-3.1.0.tar.gz": [
@@ -428,6 +446,26 @@ http_file(
     downloaded_file_path = "zulu-win-minimal.zip",
     sha256 = "b90a713c9c2d9ea23cad44d2c2dfcc9af22faba9bde55dedc1c3bb9f556ac1ae",
     urls = ["https://mirror.bazel.build/openjdk/azul-zulu11.37.17-ca-jdk11.0.6/zulu11.37.17-ca-jdk11.0.6-win_x64-minimal-b23d4e05466f2aa1fdcd72d3d3a8e962206b64bf-1581689080.zip"],
+)
+
+http_archive(
+    name = "io_bazel_rules_go",
+    sha256 = "d1ffd055969c8f8d431e2d439813e42326961d0942bdf734d2c95dc30c369566",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.24.5/rules_go-v0.24.5.tar.gz",
+        "https://github.com/bazelbuild/rules_go/releases/download/v0.24.5/rules_go-v0.24.5.tar.gz",
+    ],
+)
+
+http_archive(
+    name = "bazel_gazelle",
+    patch_cmds = EXPORT_WORKSPACE_IN_BUILD_FILE,
+    patch_cmds_win = EXPORT_WORKSPACE_IN_BUILD_FILE_WIN,
+    sha256 = "b85f48fa105c4403326e9525ad2b2cc437babaa6e15a3fc0b1dbab0ab064bc7c",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-gazelle/releases/download/v0.22.2/bazel-gazelle-v0.22.2.tar.gz",
+        "https://github.com/bazelbuild/bazel-gazelle/releases/download/v0.22.2/bazel-gazelle-v0.22.2.tar.gz",
+    ],
 )
 
 http_archive(
@@ -1101,6 +1139,15 @@ exports_files(["WORKSPACE"], visibility = ["//visibility:public"])
         "https://cdn.azul.com/zulu/bin/zulu15.27.17-ca-jdk15.0.0-win_x64.zip",
     ],
 )
+
+load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
+load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
+
+go_rules_dependencies()
+
+go_register_toolchains()
+
+gazelle_dependencies()
 
 load("@io_bazel_skydoc//:setup.bzl", "stardoc_repositories")
 

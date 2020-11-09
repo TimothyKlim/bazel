@@ -281,6 +281,7 @@ EOF
     repos=(
         "android_tools_for_testing"
         "bazel_skylib"
+        "bazel_gazelle"
         "bazel_toolchains"
         "com_google_protobuf"
         "openjdk11_darwin_archive"
