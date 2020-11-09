@@ -153,7 +153,7 @@ distdir_tar(
         # bazelbuid/stardoc
         "247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
         # rules_sass
-        "1.25.0.zip",
+        "1.29.0.zip",
         # rules_nodejs
         "rules_nodejs-1.3.0.tar.gz",
         "android_tools_pkg-0.19.0rc3.tar.gz",
@@ -198,7 +198,7 @@ distdir_tar(
         # bazelbuild/stardoc
         "247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz": "aa0c0785d971841c26bc5ef842ef965fe9859f55de69044c7628c19fe185358f",
         # rules_sass
-        "1.25.0.zip": "c78be58f5e0a29a04686b628cf54faaee0094322ae0ac99da5a8a8afca59a647",
+        "1.29.0.zip": "cf28ff1bcfafb3c97f138bbc8ca9fe386e968ed3faaa9f8e6214abb5e88a2ecd",
         # rules_nodejs
         "rules_nodejs-1.3.0.tar.gz": "b6670f9f43faa66e3009488bbd909bc7bc46a5a9661a33f6bc578068d1837f37",
         "android_tools_pkg-0.19.0rc3.tar.gz": "ea5c0589a01e2a9f43c20e5c145d3530e3b3bdbe7322789bc5da38d0ca49b837",
@@ -254,9 +254,9 @@ distdir_tar(
             "https://mirror.bazel.build/github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
             "https://github.com/bazelbuild/stardoc/archive/247c2097e7346778ac8d03de5a4770d6b9890dc5.tar.gz",
         ],
-        "1.25.0.zip": [
-            "https://mirror.bazel.build/github.com/bazelbuild/rules_sass/archive/1.25.0.zip",
-            "https://github.com/bazelbuild/rules_sass/archive/1.25.0.zip",
+        "1.29.0.zip": [
+            "https://mirror.bazel.build/github.com/bazelbuild/rules_sass/archive/1.29.0.zip",
+            "https://github.com/bazelbuild/rules_sass/archive/1.29.0.zip",
         ],
         "rules_nodejs-1.3.0.tar.gz": [
             "https://mirror.bazel.build/github.com/bazelbuild/rules_nodejs/releases/download/1.3.0/rules_nodejs-1.3.0.tar.gz",
@@ -750,11 +750,11 @@ exports_files(["_sass/style.scss"])
 # distribution archive self-contained.
 http_archive(
     name = "io_bazel_rules_sass",
-    sha256 = "c78be58f5e0a29a04686b628cf54faaee0094322ae0ac99da5a8a8afca59a647",
-    strip_prefix = "rules_sass-1.25.0",
+    sha256 = "cf28ff1bcfafb3c97f138bbc8ca9fe386e968ed3faaa9f8e6214abb5e88a2ecd",
+    strip_prefix = "rules_sass-1.29.0",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_sass/archive/1.25.0.zip",
-        "https://github.com/bazelbuild/rules_sass/archive/1.25.0.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_sass/archive/1.29.0.zip",
+        "https://github.com/bazelbuild/rules_sass/archive/1.29.0.zip",
     ],
 )
 
