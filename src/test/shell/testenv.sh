@@ -512,11 +512,11 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "rules_java",
-    sha256 = "bc81f1ba47ef5cc68ad32225c3d0e70b8c6f6077663835438da8d5733f917598",
-    strip_prefix = "rules_java-7cf3cefd652008d0a64a419c34c13bdca6c8f178",
+    sha256 = "8191781046bedb899c6ffb85ff8322a615af78f8131fe34588b2b848797b39d3",
+    strip_prefix = "rules_java-d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_java/archive/7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip",
-        "https://github.com/bazelbuild/rules_java/archive/7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_java/archive/d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip",
+        "https://github.com/bazelbuild/rules_java/archive/d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip",
     ],
 )
 EOF
