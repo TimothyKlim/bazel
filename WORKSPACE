@@ -160,7 +160,7 @@ distdir_tar(
         # bazelbuild/bazel-skylib
         "bazel-skylib-1.0.3.tar.gz",
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip",
         # bazelbuild/rules_cc
@@ -205,7 +205,7 @@ distdir_tar(
         # bazelbuild/bazel-skylib
         "bazel-skylib-1.0.3.tar.gz": "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip": "66184688debeeefcc2a16a2f80b03f514deac8346fe888fb7e691a52c023dd88",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip": "269667fd2fdbc7fff8e1b7d2ecb014aafb332cf2b8b83f78d20efb0528087933",
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip": "8191781046bedb899c6ffb85ff8322a615af78f8131fe34588b2b848797b39d3",
         # bazelbuild/rules_cc
@@ -271,9 +271,9 @@ distdir_tar(
             "https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
         ],
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip": [
-            "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
-            "https://github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip": [
+            "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
+            "https://github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
         ],
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip": [
@@ -595,7 +595,7 @@ distdir_tar(
         # bazelbuild/bazel-skylib
         "bazel-skylib-1.0.3.tar.gz",
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip",
         # bazelbuild/rules_cc
@@ -629,7 +629,7 @@ distdir_tar(
         # bazelbuild/bazel-skylib
         "bazel-skylib-1.0.3.tar.gz": "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip": "66184688debeeefcc2a16a2f80b03f514deac8346fe888fb7e691a52c023dd88",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip": "269667fd2fdbc7fff8e1b7d2ecb014aafb332cf2b8b83f78d20efb0528087933",
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip": "8191781046bedb899c6ffb85ff8322a615af78f8131fe34588b2b848797b39d3",
         # bazelbuild/rules_cc
@@ -667,9 +667,9 @@ distdir_tar(
             "https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
         ],
         # bazelbuild/platforms
-        "46993efdd33b73649796c5fc5c9efb193ae19d51.zip": [
-            "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
-            "https://github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
+        "228d7d560dd9e03228e663c51fe3ae020fb11f35.zip": [
+            "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
+            "https://github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
         ],
         # bazelbuild/rules_java
         "d43b0aa2d3b2173fcc54d3c194e89fa66cdc6e1a.zip": [
@@ -777,11 +777,11 @@ http_archive(
 
 http_archive(
     name = "platforms",
-    sha256 = "66184688debeeefcc2a16a2f80b03f514deac8346fe888fb7e691a52c023dd88",
-    strip_prefix = "platforms-46993efdd33b73649796c5fc5c9efb193ae19d51",
+    sha256 = "269667fd2fdbc7fff8e1b7d2ecb014aafb332cf2b8b83f78d20efb0528087933",
+    strip_prefix = "platforms-228d7d560dd9e03228e663c51fe3ae020fb11f35",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
-        "https://github.com/bazelbuild/platforms/archive/46993efdd33b73649796c5fc5c9efb193ae19d51.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
+        "https://github.com/bazelbuild/platforms/archive/228d7d560dd9e03228e663c51fe3ae020fb11f35.zip",
     ],
 )
 
