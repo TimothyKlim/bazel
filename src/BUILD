@@ -782,7 +782,7 @@ filegroup(
         "@remotejdk15_win_for_testing//:WORKSPACE",
         "@rules_cc//:WORKSPACE",
         "@rules_java//:WORKSPACE",
-        "@rules_pkg//:WORKSPACE",
+        "@rules_pkg//:deps.bzl",
         "@rules_proto//:WORKSPACE",
         "@rules_python//:WORKSPACE",
     ],
