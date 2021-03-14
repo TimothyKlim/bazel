@@ -15,6 +15,7 @@ java_library(
         "JarCreator.java",
         "JarHelper.java",
     ],
+    visibility = ["//visibility:public"],
 )
 
 #
